@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background: #222222;
+}
+.container {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* Header
+========================== */
+header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 28px 0 140px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+color: #FFFFFF;
+text-transform: uppercase;
+}
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-left: 40px;
+}
+
+.nav ul li a.active {
+    color: #00D6B4;
+}
+
+.nav ul li a {
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 17px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #999999;
+}
+
+.header-text {
+    max-width: 465px;
+    width: 100%;
+    margin: 138px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-btn {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00D6B4;
+    border: 1px solid #00D6B4;
+    border-radius: 3px;
+    padding: 10px 26px;
+    margin-top: 28px;
+    transition: all .5s ease;
+}
+
+.header-btn:hover {
+    background: #00D6B4;
+    color: #000;
+}
+
+/* work
+============================= */
+
+.work {
+    padding: 49px 0 79px;
+}
+
+.work-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-bottom: 33px;
+}
+
+.work-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work-block {
+    margin-bottom: 22px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work-block .link {
+    display: inline-block;
+    position: absolute;
+    right: -80px;
+    top: 10px;
+    z-index: 100;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.work-block:hover .link {
+    right: 0;
+}
+
+.work-block img {
+    transition: all 0.5s ease;
+}
+
+.work-block:hover img {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Footer
+============================ */
+
+.footer {
+    padding: 35px 0 37px;
+}
+.footer h4 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C2C2C2;
+    margin-bottom: 10px;
+}
+.footer p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #999999;
+}
